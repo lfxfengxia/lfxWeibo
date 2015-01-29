@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QYMoreFunctionViewController">
+            <connections>
+                <outlet property="bottomView" destination="7qT-5K-teQ" id="XNt-9U-icX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sJu-Qs-xVU">
+                    <rect key="frame" x="0.0" y="530" width="320" height="38"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rzf-xU-XLd">
+                            <rect key="frame" x="0.0" y="0.0" width="160" height="30"/>
+                            <inset key="contentEdgeInsets" minX="55" minY="5" maxX="55" maxY="5"/>
+                            <state key="normal" image="userinfo_tabicon_back_highlighted.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="dismiss:" destination="-1" eventType="touchUpInside" id="677-yw-PjM"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xy0-sh-nsO" userLabel="cancel">
+                            <rect key="frame" x="160" y="0.0" width="160" height="30"/>
+                            <inset key="contentEdgeInsets" minX="65" minY="5" maxX="65" maxY="5"/>
+                            <state key="normal" image="navigationbar_close_highlighted.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="returnMain:" destination="-1" eventType="touchUpInside" id="hue-vl-ldk"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Xy0-sh-nsO" firstAttribute="leading" secondItem="rzf-xU-XLd" secondAttribute="trailing" id="11g-C8-URq"/>
+                        <constraint firstItem="rzf-xU-XLd" firstAttribute="top" secondItem="sJu-Qs-xVU" secondAttribute="top" id="Cov-fP-meK"/>
+                        <constraint firstItem="rzf-xU-XLd" firstAttribute="height" secondItem="Xy0-sh-nsO" secondAttribute="height" id="QLy-OL-pFM"/>
+                        <constraint firstItem="rzf-xU-XLd" firstAttribute="leading" secondItem="sJu-Qs-xVU" secondAttribute="leading" id="bTB-QX-f5W"/>
+                        <constraint firstAttribute="bottom" secondItem="Xy0-sh-nsO" secondAttribute="bottom" constant="8" id="dYc-FC-xoa"/>
+                        <constraint firstItem="rzf-xU-XLd" firstAttribute="width" secondItem="Xy0-sh-nsO" secondAttribute="width" id="gN4-hg-A8M"/>
+                        <constraint firstItem="Xy0-sh-nsO" firstAttribute="top" secondItem="sJu-Qs-xVU" secondAttribute="top" id="k8u-jY-Qkh"/>
+                        <constraint firstAttribute="bottom" secondItem="rzf-xU-XLd" secondAttribute="bottom" constant="8" id="pBh-xR-Qqm"/>
+                        <constraint firstAttribute="height" constant="38" id="sRs-aw-rJR"/>
+                        <constraint firstItem="Xy0-sh-nsO" firstAttribute="leading" secondItem="rzf-xU-XLd" secondAttribute="trailing" id="v8k-mc-huK"/>
+                        <constraint firstAttribute="trailing" secondItem="Xy0-sh-nsO" secondAttribute="trailing" id="vkx-za-OKO"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7qT-5K-teQ">
+                    <rect key="frame" x="0.0" y="210" width="320" height="320"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsW-he-fwD">
+                            <rect key="frame" x="8" y="18" width="77" height="139"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="139" id="qED-a5-UNE"/>
+                                <constraint firstAttribute="width" constant="77" id="tge-ch-bne"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="30"/>
+                            <state key="normal" title=" " image="tabbar_compose_friend.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="tabbar_compose_friend@3x.png"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="朋友圈" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PsG-az-6Ng">
+                            <rect key="frame" x="21" y="122" width="51" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="9zX-kI-60k"/>
+                                <constraint firstAttribute="width" constant="51" id="V5d-wo-xHL"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgL-0J-NVY">
+                            <rect key="frame" x="121.5" y="18" width="77" height="139"/>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="30"/>
+                            <state key="normal" title=" " image="tabbar_compose_shooting.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="tabbar_compose_shooting@3x.png"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xIH-V5-jp9">
+                            <rect key="frame" x="243" y="18" width="77" height="139"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="139" id="CGf-Zb-ej6"/>
+                                <constraint firstAttribute="width" constant="77" id="JG0-M5-ybs"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="30"/>
+                            <state key="normal" title=" " image="tabbar_compose_music.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="tabbar_compose_music@3x.png"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="音乐" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IbJ-5W-aqA">
+                            <rect key="frame" x="264" y="122" width="34" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="LRO-Yr-LPS"/>
+                                <constraint firstAttribute="width" constant="34" id="VRn-hE-HDh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tW7-n8-bdR">
+                            <rect key="frame" x="8" y="173" width="77" height="139"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="139" id="9gD-aA-liU"/>
+                                <constraint firstAttribute="width" constant="77" id="Vby-Od-DGd"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="30"/>
+                            <state key="normal" title=" " image="tabbar_compose_weibo.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="tabbar_compose_weibo@3x.png"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="长微博" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Waf-nq-eCT">
+                            <rect key="frame" x="21" y="275" width="51" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="51" id="69E-s7-IWp"/>
+                                <constraint firstAttribute="height" constant="21" id="HMX-r4-DRy"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="秒拍" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rqm-2Q-WXj">
+                            <rect key="frame" x="143" y="122" width="34" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="xIH-V5-jp9" firstAttribute="top" secondItem="7qT-5K-teQ" secondAttribute="top" constant="18" id="0nh-ng-png"/>
+                        <constraint firstAttribute="height" constant="320" id="1tX-bI-lIW"/>
+                        <constraint firstItem="Rqm-2Q-WXj" firstAttribute="top" secondItem="PsG-az-6Ng" secondAttribute="top" id="3hA-mx-tnP"/>
+                        <constraint firstItem="wsW-he-fwD" firstAttribute="top" secondItem="7qT-5K-teQ" secondAttribute="top" constant="18" id="5Ae-ye-dmR"/>
+                        <constraint firstItem="lgL-0J-NVY" firstAttribute="top" secondItem="wsW-he-fwD" secondAttribute="top" id="5KO-tJ-GnA"/>
+                        <constraint firstItem="lgL-0J-NVY" firstAttribute="height" secondItem="xIH-V5-jp9" secondAttribute="height" id="71Z-Tb-IUj"/>
+                        <constraint firstItem="tW7-n8-bdR" firstAttribute="leading" secondItem="7qT-5K-teQ" secondAttribute="leading" constant="8" id="8J9-vM-b8e"/>
+                        <constraint firstItem="Rqm-2Q-WXj" firstAttribute="top" secondItem="IbJ-5W-aqA" secondAttribute="top" id="96f-Lk-4eX"/>
+                        <constraint firstItem="wsW-he-fwD" firstAttribute="centerX" secondItem="PsG-az-6Ng" secondAttribute="centerX" id="Egu-kk-poA"/>
+                        <constraint firstItem="PsG-az-6Ng" firstAttribute="top" secondItem="7qT-5K-teQ" secondAttribute="top" constant="122" id="HHj-oc-Ca8"/>
+                        <constraint firstItem="xIH-V5-jp9" firstAttribute="centerX" secondItem="IbJ-5W-aqA" secondAttribute="centerX" id="Kov-k4-bZa"/>
+                        <constraint firstItem="Waf-nq-eCT" firstAttribute="top" secondItem="wsW-he-fwD" secondAttribute="bottom" constant="118" id="Mn4-Rl-SxE"/>
+                        <constraint firstAttribute="centerX" secondItem="Rqm-2Q-WXj" secondAttribute="centerX" id="Q2i-87-S1B"/>
+                        <constraint firstAttribute="trailing" secondItem="xIH-V5-jp9" secondAttribute="trailing" id="Q9T-Ej-erh"/>
+                        <constraint firstItem="wsW-he-fwD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7qT-5K-teQ" secondAttribute="leading" constant="8" id="Ucd-5j-c88"/>
+                        <constraint firstAttribute="centerX" secondItem="lgL-0J-NVY" secondAttribute="centerX" id="YhG-Qh-cA7"/>
+                        <constraint firstItem="wsW-he-fwD" firstAttribute="leading" secondItem="7qT-5K-teQ" secondAttribute="leading" constant="8" id="awq-jj-zew"/>
+                        <constraint firstItem="tW7-n8-bdR" firstAttribute="centerX" secondItem="Waf-nq-eCT" secondAttribute="centerX" id="dzu-yc-rkU"/>
+                        <constraint firstItem="Rqm-2Q-WXj" firstAttribute="width" secondItem="IbJ-5W-aqA" secondAttribute="width" id="ePI-yT-buU"/>
+                        <constraint firstItem="IbJ-5W-aqA" firstAttribute="top" secondItem="7qT-5K-teQ" secondAttribute="top" constant="122" id="hoa-h7-BhT"/>
+                        <constraint firstItem="Rqm-2Q-WXj" firstAttribute="height" secondItem="IbJ-5W-aqA" secondAttribute="height" id="icY-M1-Fkv"/>
+                        <constraint firstItem="lgL-0J-NVY" firstAttribute="width" secondItem="xIH-V5-jp9" secondAttribute="width" id="nOH-01-shb"/>
+                        <constraint firstAttribute="bottom" secondItem="tW7-n8-bdR" secondAttribute="bottom" constant="8" id="zOh-Tu-Stt"/>
+                        <constraint firstItem="lgL-0J-NVY" firstAttribute="top" secondItem="xIH-V5-jp9" secondAttribute="top" id="zfs-mH-ySR"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compose_slogan.png" translatesAutoresizingMaskIntoConstraints="NO" id="FOK-BM-D2z">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="G35-op-3As"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="FOK-BM-D2z" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0rq-HG-5Pe"/>
+                <constraint firstAttribute="trailing" secondItem="sJu-Qs-xVU" secondAttribute="trailing" id="8pi-Ld-JUo"/>
+                <constraint firstAttribute="trailing" secondItem="FOK-BM-D2z" secondAttribute="trailing" id="B5u-AR-f6E"/>
+                <constraint firstItem="FOK-BM-D2z" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="IPc-R9-wuJ"/>
+                <constraint firstAttribute="bottom" secondItem="sJu-Qs-xVU" secondAttribute="bottom" id="TZf-nX-gzn"/>
+                <constraint firstAttribute="trailing" secondItem="7qT-5K-teQ" secondAttribute="trailing" id="f8O-4E-pJc"/>
+                <constraint firstItem="sJu-Qs-xVU" firstAttribute="top" secondItem="7qT-5K-teQ" secondAttribute="bottom" id="p7V-gW-gfU"/>
+                <constraint firstItem="sJu-Qs-xVU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sef-G5-SLF"/>
+                <constraint firstItem="7qT-5K-teQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uwv-dh-eOb"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="223" y="287"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="compose_slogan.png" width="154" height="48"/>
+        <image name="navigationbar_close_highlighted.png" width="30" height="30"/>
+        <image name="tabbar_compose_friend.png" width="71" height="71"/>
+        <image name="tabbar_compose_friend@3x.png" width="213" height="213"/>
+        <image name="tabbar_compose_music.png" width="71" height="71"/>
+        <image name="tabbar_compose_music@3x.png" width="213" height="213"/>
+        <image name="tabbar_compose_shooting.png" width="71" height="71"/>
+        <image name="tabbar_compose_shooting@3x.png" width="213" height="213"/>
+        <image name="tabbar_compose_weibo.png" width="71" height="71"/>
+        <image name="tabbar_compose_weibo@3x.png" width="213" height="213"/>
+        <image name="userinfo_tabicon_back_highlighted.png" width="30" height="30"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>00D37DE8-61A4-49AC-BEB2-9E2D6D78BE44</string>
+	<key>IDESourceControlProjectName</key>
+	<string>XinXinWeiobo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>A304A71740214C69E010CDDE29DAC471E2B980EA</key>
+		<string>https://github.com/takashisite/TSPopover.git</string>
+		<key>D335421313C80AA7267191A797F5B13707A8D240</key>
+		<string>https://github.com/lfxfengxia/lfxWeibo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>XinXinWeiobo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>A304A71740214C69E010CDDE29DAC471E2B980EA</key>
+		<string>../..QYWeiBo/TSPopover/</string>
+		<key>D335421313C80AA7267191A797F5B13707A8D240</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/lfxfengxia/lfxWeibo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D335421313C80AA7267191A797F5B13707A8D240</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D335421313C80AA7267191A797F5B13707A8D240</string>
+			<key>IDESourceControlWCCName</key>
+			<string>lfxWeibo</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A304A71740214C69E010CDDE29DAC471E2B980EA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TSPopover</string>
+		</dict>
+	</array>
+</dict>
+</plist>
